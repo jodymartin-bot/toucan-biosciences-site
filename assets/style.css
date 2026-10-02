@@ -10,3 +10,7 @@
 
 /* Show more of the panoramic About hero artwork */
 @media(min-width:901px){.about-hero-art{background-size:auto 100%;background-position:center center;background-color:#03131d}}
+
+/* Match approved About mockup hero proportions */
+@media(min-width:901px){.about-visual-hero,.about-hero-content{min-height:405px}.about-hero-art{background-size:auto 405px;background-position:62% center}.about-hero-copy{width:41%;max-width:500px}.about-hero-copy h1{font-size:58px;line-height:.96;letter-spacing:-.035em;margin:10px 0 18px}.about-hero-copy p{font-size:16px;line-height:1.45;max-width:455px}.about-hero-label{right:28px;bottom:14px}}
+@media(min-width:1400px){.about-visual-hero,.about-hero-content{min-height:430px}.about-hero-art{background-size:auto 430px;background-position:64% center}}
