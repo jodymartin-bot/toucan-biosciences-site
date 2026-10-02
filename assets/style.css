@@ -32,3 +32,6 @@
 
 /* Homepage fixes: keep hero copy visible and prevent Opportunity overflow */
 .home-hero-content{z-index:5}.home-hero-copy{position:relative;z-index:6;color:#fff;text-shadow:0 1px 18px rgba(0,0,0,.35)}.home-hero-copy .eyebrow{color:#45ddff}.home-hero-copy p{color:#e3edf2}.home-opportunity,.home-op-grid{max-width:100%;overflow:hidden}.home-op-grid>*{min-width:0}.production-op-image{width:100%;max-width:100%;min-width:0;min-height:0}.production-op-image img{width:100%;max-width:100%;height:auto;min-height:0;display:block;object-fit:contain}.production-op-image figcaption{z-index:2}@media(max-width:900px){.home-op-grid{width:100%}.production-op-image,.production-op-image img{min-height:0}}
+
+/* Opportunity artwork: extend toward the same right edge as hero artwork */
+@media(min-width:901px){.home-op-grid{grid-template-columns:.68fr 1.42fr;gap:38px}.production-op-image{margin-right:calc((100vw - min(var(--max), calc(100vw - 48px)))/-2);border-radius:8px 0 0 8px}.production-op-image img{width:100%;height:auto;object-fit:contain}}
