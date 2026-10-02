@@ -14,3 +14,7 @@
 /* Match approved About mockup hero proportions */
 @media(min-width:901px){.about-visual-hero,.about-hero-content{min-height:405px}.about-hero-art{background-size:auto 405px;background-position:62% center}.about-hero-copy{width:41%;max-width:500px}.about-hero-copy h1{font-size:58px;line-height:.96;letter-spacing:-.035em;margin:10px 0 18px}.about-hero-copy p{font-size:16px;line-height:1.45;max-width:455px}.about-hero-label{right:28px;bottom:14px}}
 @media(min-width:1400px){.about-visual-hero,.about-hero-content{min-height:430px}.about-hero-art{background-size:auto 430px;background-position:64% center}}
+
+/* Extend approved About hero artwork fully to viewport right edge */
+@media(min-width:901px){.about-hero-art{background-size:auto 405px;background-position:right center;background-repeat:no-repeat}.about-hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#03131d 0%,#03131d 18%,rgba(3,19,29,.88) 28%,rgba(3,19,29,.35) 43%,rgba(3,19,29,0) 58%);pointer-events:none}}
+@media(min-width:1400px){.about-hero-art{background-size:auto 430px;background-position:right center}}
