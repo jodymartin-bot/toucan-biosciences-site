@@ -47,3 +47,12 @@
 }
 .home-value,.home-value-grid{max-width:100%;overflow:hidden}.home-value-grid>*{min-width:0}.production-value-image{width:100%;max-width:100%;min-width:0;overflow:hidden}.production-value-image img{display:block;width:100%;max-width:100%;height:310px;min-height:0;object-fit:cover;object-position:center}
 @media(max-width:900px){.production-value-image img{height:auto;max-height:360px;object-fit:contain}.production-value-image{min-height:0}}
+
+/* Widen homepage Opportunity and Value artwork ~25% toward the right */
+@media(min-width:901px){
+ .home-opportunity{overflow:hidden}.home-opportunity .container.home-op-grid{grid-template-columns:minmax(300px,.56fr) minmax(0,1.8fr);gap:28px}
+ .production-op-image{width:125%;max-width:none;justify-self:start;overflow:hidden}.production-op-image img{width:100%;max-width:none;height:auto}
+ .home-value{overflow:hidden}.home-value-grid{grid-template-columns:.82fr 1.12fr .82fr;width:100%;max-width:var(--max);overflow:visible}
+ .production-value-image{width:125%;max-width:none;position:relative;z-index:1}.production-value-image img{width:100%;max-width:none;height:310px;object-fit:cover}
+ .home-partner-card{position:relative;z-index:2}
+}
