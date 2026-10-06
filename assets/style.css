@@ -78,3 +78,15 @@
  .production-value-image img{width:100%;max-width:100%;height:190px;min-height:0;object-fit:cover;object-position:center}
  .home-partner-card{margin:0;padding-top:28px!important;padding-bottom:28px!important;padding-right:max(28px,calc((100vw - var(--max))/2))!important}
 }
+
+/* Value section rebalance after visual QA */
+@media(min-width:901px){
+ .home-value .container.home-value-grid{padding-left:max(24px,calc((100vw - var(--max))/2));padding-right:max(24px,calc((100vw - var(--max))/2));grid-template-columns:minmax(330px,.82fr) minmax(560px,1.42fr) minmax(330px,.82fr);gap:0;align-items:stretch;overflow:hidden}
+ .home-value-grid>div,.home-value-grid>figure{padding-top:36px;padding-bottom:36px}
+ .home-value-grid>div:first-child{padding-right:36px;display:flex;flex-direction:column;justify-content:center}
+ .production-value-image{height:285px;min-height:285px;padding:0!important;margin:auto 0;align-self:center}
+ .production-value-image img{height:285px;min-height:0;width:100%;object-fit:cover;object-position:center}
+ .home-partner-card{padding:36px 38px!important;display:flex;flex-direction:column;justify-content:center;min-width:0}
+ .home-partner-card h2,.home-partner-card h3{max-width:280px}
+ .home-partner-card p{max-width:300px}
+}
