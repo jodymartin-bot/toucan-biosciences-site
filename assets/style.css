@@ -90,3 +90,11 @@
  .home-partner-card h2,.home-partner-card h3{max-width:280px}
  .home-partner-card p{max-width:300px}
 }
+
+/* Final homepage CTA artwork: maintain accessible, clickable HTML copy */
+.home-final{position:relative;overflow:hidden;background:#030b19;min-height:350px;display:flex;align-items:center}
+.home-final-art{position:absolute;inset:0;background-image:linear-gradient(90deg,#030b19 0%,#030b19 27%,rgba(3,11,25,.96) 37%,rgba(3,11,25,.52) 55%,rgba(3,11,25,.06) 80%),url("Expanding%20Possibilities%20in%20Fluorescent%20Imaging.png");background-position:center center;background-size:cover;background-repeat:no-repeat}
+.home-final-content{position:relative;z-index:2;grid-template-columns:minmax(0,1fr);width:100%;padding-top:38px;padding-bottom:38px}
+.home-final-content>div:first-child{padding-left:0;max-width:570px}
+.home-final-brand{display:none}
+@media(max-width:900px){.home-final{min-height:330px}.home-final-art{background-position:65% center;background-image:linear-gradient(90deg,rgba(3,11,25,.98) 0%,rgba(3,11,25,.93) 45%,rgba(3,11,25,.58) 100%),url("Expanding%20Possibilities%20in%20Fluorescent%20Imaging.png")}.home-final-content>div:first-child{padding-left:0}}
